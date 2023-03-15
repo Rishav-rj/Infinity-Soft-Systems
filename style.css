@@ -1,0 +1,342 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    overflow-x: hidden;
+    width:100vw;
+    height: 1200px;
+}
+
+#content-container{
+    width:1280px;
+    height: 1200px;
+}
+
+
+
+
+    /* ---- Top_Section ---- */
+
+
+#top-secton{
+    display: flex;
+    justify-content: space-around;
+    z-index:1000;
+    margin-top:30px;
+
+}
+
+.text-container{
+    max-width: 580px;
+    padding-left: 50px;
+}
+.text-container h1, 
+.text-container p{
+    color: #0394b2;
+    line-height: 1.8;
+    padding: 5px;
+} 
+
+.img-container{
+    clip-path: polygon(15% 0, 100% 0%, 90% 100%, 0 100%);
+}
+
+.img-container img{
+    max-width: 500px;
+}
+
+
+
+
+
+/* ---- Middle_Section ---- */
+
+
+
+
+#middle-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 40%;
+    width: 100%;
+}
+
+.container::before{
+    content: "";
+    width: 1600px;
+    height:420px;
+    top:25.5%;
+    background-color: #ff7675;
+    position: absolute;
+    z-index: 0;
+    transform: rotate(20deg);
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:60vh;
+    width:100%;
+    overflow:hidden;
+}
+
+.left-container{
+    flex:4;
+    width:40%;
+    height:100%;
+    margin:0 0px 0 100px;
+    z-index: 900;
+}
+
+.left-container h1,.left-container p{
+    color: white;
+    text-align: left;
+    padding:10px 0;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+.left-container button{
+    display: block;
+    margin: 10px 0;
+    padding: 8px 40px;
+    background: #b42e1f;
+    color:white;
+    border: none;
+    cursor: pointer;
+}
+
+
+.right-container{
+    flex:8;
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+}
+
+#slider-Container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:absolute;
+    top:0;
+    left:0;
+    transition: "";
+}
+
+.slide{
+    padding-right:10px;
+}
+
+.slide img{
+    max-width: 450px;
+    height: 350px;
+}
+
+.slide-text{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    top:0;
+    background-color: rgba(0,0,0,.4);
+    width: 450px;
+    height: 350px;
+    overflow: hidden;
+}
+
+.slide-text::after{
+    content: "";
+    display: inline;
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    background-color:#0394b2;
+    top: -60px;
+    right: -60px;
+    transform: rotate(45deg);
+}
+
+.slide-text h1,.slide-text p{
+    color: white;
+    text-align: center;
+    width:400px;
+    padding:10px;
+    margin: 0 auto;
+    line-height: 1.5;
+}
+.slide-text button{
+    display: block;
+    margin: 10px auto;
+    padding: 8px 40px;
+    background: #b42e1f;
+    color:white;
+    border: none;
+    cursor: pointer;
+}
+.arrow img{
+    background-color: #0394b2;
+    padding: 10px;
+    position: absolute;
+    z-index: 1000;
+    top:24%;
+    cursor: pointer;
+}
+
+#left-arrow{
+    left:34.8%;
+}
+#right-arrow{
+    left:38.59%;
+}
+
+
+/* ---- Last_section ---- */
+
+#Last-section{
+    position: relative;
+    height: 450px;
+}
+
+#Last-section .box{
+    background-color: #ff7675;
+    width:140px;
+    height:55px;
+    position: absolute;
+    color:white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-1{
+    top:80px;
+    left:25%;
+}
+.box-2{
+    top:180px;
+    left:33%;
+}
+
+
+.line1{
+    width:220px;
+    height:230px;
+    position: absolute;
+    left:8%;
+    top:-120px;
+    background-color: #ff7675;
+    animation: line1 .5s;
+    clip-path: polygon(0 0, 2% 0, 2% 100%, 0% 100%);
+}
+
+.dot1{
+    width:25px;
+    height:25px;
+    position: absolute;
+    left:7.3%;
+    top:95px;
+    background-color: #ff7675;
+    border-radius: 50%;
+}
+
+.line2{
+    width:230px;
+    height:230px;
+    position: absolute;
+    left:8%;
+    top:-120px;
+    background-color: #ff7675;
+    animation:line2 .5s;
+    clip-path: polygon(0% 100%, 0% 98%, 100% 98%, 100% 100%);
+}
+.line3{
+    width:220px;
+    height:102px;
+    position: absolute;
+    left:8%;
+    top:109px;
+    background-color: #ff7675;
+    animation:line3 .5s;
+    clip-path: polygon(0 0, 2% 0, 2% 100%, 0% 100%);
+}
+.dot2{
+    width:25px;
+    height:25px;
+    position: absolute;
+    left:7.3%;
+    top:195px;
+    background-color: #ff7675;
+    border-radius: 50%;
+    
+}
+.line4{
+    width:330px;
+    height:102px;
+    position: absolute;
+    left:8%;
+    top:109px;
+    background-color: #ff7675;
+    animation:line4 .5s;
+    clip-path: polygon(0% 100%, 0% 96%, 100% 96%, 100% 100%);
+}
+.line5{
+    width:220px;
+    height: 225px;
+    position: absolute;
+    left:38%;
+    top:225px;
+    background-color: #ff7675;
+    animation:line5 .5s;
+    clip-path: polygon(0% 0%, 2% 0%, 2% 100%, 0% 100%);
+}
+
+
+@keyframes line1 {
+    0%{
+        clip-path: polygon(0 0, 0 0, 0 0, 0 0);
+    }
+    100%{
+        clip-path: polygon(0 0, 2% 0, 2% 100%, 0% 100%);
+    }
+}
+@keyframes line2 {
+    0%{
+        clip-path: polygon(0% 100%, 0% 98%, 0% 100%, 0% 98%);
+    }
+    100%{
+        clip-path: polygon(0% 100%, 0% 98%, 100% 98%, 100% 100%);
+    }
+}
+@keyframes line3 {
+    0%{
+        clip-path: polygon(0 0, 0 0, 0 0, 0 0);
+    }
+    100%{
+        clip-path: polygon(0 0, 2% 0, 2% 100%, 0% 100%);
+    }
+}
+@keyframes line4 {
+    0%{
+        clip-path: polygon(0% 100%, 0% 96%, 0% 100%, 0% 96%);
+    }
+    100%{
+        clip-path: polygon(0% 100%, 0% 96%, 100% 96%, 100% 100%);
+    }
+}
+@keyframes line5 {
+    0%{
+        clip-path: polygon(0% 0%, 2% 0%, 2% 0%, 0% 2%);
+    }
+    100%{
+        clip-path: polygon(0% 0%, 2% 0%, 2% 100%, 0% 100%);
+    }
+}
